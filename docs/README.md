@@ -107,9 +107,3 @@ this.$emit('changes', '1')
 
 后端主要作用就是为前端生成`token`，验证`token`有效性，处理前端用户输入通关密钥的正确与否，感觉没有什么好说的！
 
-## 项目地址
-
-
-项目已经开源`github`，本项目地址：
-
-[Web挑战赛](https://github.com/helpcode/WebGeek)

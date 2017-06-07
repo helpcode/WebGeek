@@ -107,14 +107,3 @@ this.$emit('changes', '1')
 
 后端主要作用就是为前端生成`token`，验证`token`有效性，处理前端用户输入通关密钥的正确与否，感觉没有什么好说的！
 
-
-## 赞助
-
-能否扫码捐赠1元，炎热夏季让博主买瓶矿泉水呗…(●’◡’●)
-
-<div style="float:left;margin-left:20px;width:30%;text-align: center"><br>    <a href="http://obl1kak28.bkt.clouddn.com/weixin.png" class="fancybox" rel="group" target="_blank"><img src="http://obl1kak28.bkt.clouddn.com/weixin.png" alt="2"></a><br>    微信<br>  </div>
-
-<br/>
-
-<div style="float:right !important;margin:-31px 20px 0 0;width:30%;text-align: center"><a href="http://obl1kak28.bkt.clouddn.com/zhifubao.png" class="fancybox" rel="group" target="_blank"><img src="http://obl1kak28.bkt.clouddn.com/zhifubao.png" alt="3"></a><br>   支付宝<br>  </div><div style="clear: both"></div>
-
