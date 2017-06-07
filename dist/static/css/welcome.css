@@ -5,19 +5,6 @@
 .el-row--flex ,.is-justify-center{
   font-family: DalaFloda-Bold-Web;
 }
-.title {
-  letter-spacing: 5px;
-  font-size: 35px;
-  color: #8d8d8d;
-  padding-top: 28%;
-  transition: all 0.2s ease-in 0.1s;
-  -moz-transition: all 0.2s ease-in 0.1s;
-  -webkit-transition: all 0.2s ease-in 0.1s;
-  -o-transition: all 0.2s ease-in 0.1s;
-}
-.title:hover{
-  color: #626262 !important;
-}
 
 .web-title {
   padding-top: 8%;
