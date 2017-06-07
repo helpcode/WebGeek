@@ -1,0 +1,39 @@
+@font-face {
+  font-family: DalaFloda-Bold-Web;
+  src: url('./../../static/font/DalaFloda-Bold-Web.woff');
+}
+.el-row--flex ,.is-justify-center{
+  font-family: DalaFloda-Bold-Web;
+}
+.title {
+  letter-spacing: 5px;
+  font-size: 35px;
+  color: #8d8d8d;
+  padding-top: 28%;
+  transition: all 0.2s ease-in 0.1s;
+  -moz-transition: all 0.2s ease-in 0.1s;
+  -webkit-transition: all 0.2s ease-in 0.1s;
+  -o-transition: all 0.2s ease-in 0.1s;
+}
+.title:hover{
+  color: #626262 !important;
+}
+
+.web-title {
+  padding-top: 8%;
+  display: block;
+  width: 74%;
+  font-size: 300px;
+}
+
+.bg-purple {
+  text-align: center;
+}
+
+.docs {
+  text-decoration: none;
+  color: #bfbfbf;
+  letter-spacing: 2px;
+  padding-top: 20px;
+  display: block;
+}
