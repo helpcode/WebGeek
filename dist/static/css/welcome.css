@@ -1,6 +1,6 @@
 @font-face {
   font-family: DalaFloda-Bold-Web;
-  src: url('http://okkzzhtds.bkt.clouddn.com/DalaFloda-Bold-Web.woff');
+  src: url('./../font/DalaFloda-Bold-Web.woff');
 }
 .el-row--flex ,.is-justify-center{
   font-family: DalaFloda-Bold-Web;
