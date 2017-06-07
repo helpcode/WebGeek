@@ -6,7 +6,13 @@
 
 每一关都需要32位通关密钥，至于如何拿到密钥就要看你的能力了。关卡不难，主要考验综合能力！
 
-> 项目访问地址：[http://139.224.210.190/geek/#/](http://139.224.210.190/geek/#/)
+> 在线地址：[https://helpcode.github.io/WebGeek/dist](https://helpcode.github.io/WebGeek/dist/#/welcome)
+
+> 项目地址：[https://github.com/helpcode/WebGeek](https://github.com/helpcode/WebGeek)
+
+> 项目文档：[https://helpcode.github.io/WebGeek/docs](https://helpcode.github.io/WebGeek/docs/#/)
+
+
 
 ## 前端
 

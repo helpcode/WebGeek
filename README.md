@@ -6,7 +6,13 @@
 
 每一关都需要32位通关密钥，至于如何拿到密钥就要看你的能力了。关卡不难，主要考验综合能力！
 
-> 项目访问地址：[http://139.224.210.190/geek/#/](http://139.224.210.190/geek/#/)
+> 在线地址：[https://helpcode.github.io/WebGeek/dist](https://helpcode.github.io/WebGeek/dist/#/welcome)
+
+> 项目地址：[https://github.com/helpcode/WebGeek](https://github.com/helpcode/WebGeek)
+
+> 项目文档：[https://helpcode.github.io/WebGeek/docs](https://helpcode.github.io/WebGeek/docs/#/)
+
+
 
 ## 前端
 
@@ -99,12 +105,16 @@ this.$emit('changes', '1')
 
 ### 后端设计思路
 
-后端主要作用就是为前端生成`token`，验证`token`有效性，处理前端用户输入通关密钥的正确与否，感觉没有什么好说的！千言万语不如看代码。
+后端主要作用就是为前端生成`token`，验证`token`有效性，处理前端用户输入通关密钥的正确与否，感觉没有什么好说的！
 
-## 项目地址
 
-项目已经开源`github`，本项目地址：
+## 赞助
 
-[Web挑战赛](https://github.com/helpcode/WebGeek)
+能否扫码捐赠1元，炎热夏季让博主买瓶矿泉水呗…(●’◡’●)
 
+<div style="float:left;margin-left:20px;width:30%;text-align: center"><br>    <a href="http://obl1kak28.bkt.clouddn.com/weixin.png" class="fancybox" rel="group" target="_blank"><img src="http://obl1kak28.bkt.clouddn.com/weixin.png" alt="2"></a><br>    微信<br>  </div>
+
+<br/>
+
+<div style="float:right !important;margin:-31px 20px 0 0;width:30%;text-align: center"><a href="http://obl1kak28.bkt.clouddn.com/zhifubao.png" class="fancybox" rel="group" target="_blank"><img src="http://obl1kak28.bkt.clouddn.com/zhifubao.png" alt="3"></a><br>   支付宝<br>  </div><div style="clear: both"></div>
 
