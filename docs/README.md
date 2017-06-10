@@ -101,9 +101,69 @@ this.$emit('changes', '1')
 
 - REST API：[express](http://www.expressjs.com.cn/)
 
-> 基于 Node.js 平台，快速、开放、极简的 web 开发框架。
+> 基于 Node.js 平台，快速、开放、极简的 web 开发框架，本项目中主要作为REST API。
+
+- Https：[阿里云-云盾证书服务](https://yundun.console.aliyun.com/?p=cas#/cas/home)
+
+> 阿里云免费提供的免费`https`域名证书，提供已备案的域名即可快速简单的拿到证书文件。**至于整套的部署事项稍后博客公开完善教程敬请期待！！**
+
+- 服务器环境：[Ubuntu 16.04 ](http://cn.ubuntu.com/)
+
+> 较为好用的`Linux`发行版本之一，在阿里云购买(总价54.85 - 代金券支付50.00 = 最后4.85买入)。
+
+```javascript
+操作系统：Ubuntu 16.04 64位
+实例名称：iZuf6bzricg7h0r5jqgy4uZ
+实例ID：i-uf6bzricg7h0r5jqgy4u	
+地域：华东 2（China East 2 Zone B）	
+付费类型：包年包月
+实例系列：系列 II	实例规格：1 核 1GB（通用型 n1，ecs.n1.tiny）	I/O 优化：I/O 优化实例
+网络类型：专有网络	虚拟交换机：vsw-uf6jkbcrn4d7ihg8wk260	
+安全组：sg-uf6cercflxm40u4pz1dm	
+内网 IP：172.19.35.18	
+弹性公网 IP：106.14.224.122(自行购买)
+公网带宽：按固定带宽	当前使用带宽 ：1Mbps
+系统盘：40GB 高效云盘	
+```
 
 ### 后端设计思路
 
 后端主要作用就是为前端生成`token`，验证`token`有效性，处理前端用户输入通关密钥的正确与否，感觉没有什么好说的！
+
+其次是基于`nodejs`实现整站的`https`访问，主要为了解决前端项目部署到`Github Page`默认`https`对服务器`http`导致的资源和接口无法访问的问题。
+
+主要实现思路如下是`www`文件中`require`引入内置的`fs(读取从阿里云拿到的免费证书)`和`https(nodejs内置https服务)`
+
+```javascript
+//引入模块
+var https = require('https');
+var fs= require('fs');
+
+//引入阿里云https证书
+var options = {
+    key: fs.readFileSync('./ssl/geekhelp.key'),
+    cert: fs.readFileSync('./ssl/geekhelp.pem')
+}
+```
+
+接着创建https服务引入配置项，然后设置端口。这里端口是`324`，我自己生日3月24号，同时还需要在阿里云服务器的后台配置`安全组配置`允许访问`324`端口。
+
+```javascript
+var httpsport = normalizePort(process.env.PORT || '324');
+var httpserver = https.createServer(options,app);
+httpserver.listen(httpsport);
+
+//配置 安全组配置
+
+允许	 自定义TCP	324/324	 地址段访问 	0.0.0.0/0  -   1	2017-06-10  22:05:00
+```
+
+最后打包后端代码`scp(就是不喜欢ftp)`上传到服务器你喜欢的路径下，然后先`npm install`解决项目依赖，再`npm start`运行后端项目即可，记住这里可以直接退出服务器终端环境，不要`Ctrl+C`停止后台服务，否则前端访问不了接口，你懂得！
+
+```javascript
+//http服务，端口我媳妇生日
+Http Web Server Run Is，http://www.xxxx.cn:49
+//https服务，端口我生日
+Https Web Server Run Is，https://www.xxxx.cn:324
+```
 
